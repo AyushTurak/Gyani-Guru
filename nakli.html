@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+
+        <div class="mySlides">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+
+        <div class="mySlides">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            // Change slide every 2 seconds (2000 milliseconds)
+            setTimeout(showSlides, 2000);
+        }
+
+        // Initial call to start the slideshow
+        showSlides();
+    </script>
+</body>
+</html>

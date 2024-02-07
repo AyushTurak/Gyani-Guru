@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+      
+      display: none;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* width: 100px;
+      height: 100; */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Web Development</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('section1')">HTML </a>
+    <a href="#" onclick="showSection('section2')">CSS </a>
+    <a href="#" onclick="showSection('section3')">JavaScript 3</a>
+    <a href="#" onclick="showSection('section4')">NodeJS </a>
+    <a href="#" onclick="showSection('section5')">ExpressJS </a>
+    <a href="#" onclick="showSection('section6')">Angular </a>
+  </nav>
+
+  
+  <section id="section1" class="video-section">
+    <h2>HTML</h2>
+    <div class="video-container">
+      <iframe width="556" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=_RjPYgoDhQ8AQTHp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+    </div>
+  </section>
+
+  <section id="section2" class="video-section">
+    <h2>CSS</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ESnrn1kAD4E?si=ZlFsjGsN_KBkcdVK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="section3" class="video-section">
+    <h2>JavaScript</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/sscX432bMZo?si=uVtWKW0lOphDJDuS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="section4" class="video-section">
+    <h2>NodeJs</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BLl32FvcdVM?si=gexXas-rmRx4bUhL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="section5" class="video-section">
+    <h2>ExpressJs</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7H_QH9nipNs?si=DsDwEN8ot4VDSZpS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="section6" class="video-section">
+    <h2>AngularJs</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0LhBvp8qpro?si=rKZyboDuWTlG3TBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <script>
+
+
+  function showSection(sectionId) {
+    // Hide all sections
+    var sections = document.getElementsByClassName('video-section');
+    for (var i = 0; i < sections.length; i++) {
+      sections[i].style.display = 'none';
+    }
+
+    // Show the selected section
+    var selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+      selectedSection.style.display = 'block';
+    }
+  }
+</script>
+</body>
+</html>

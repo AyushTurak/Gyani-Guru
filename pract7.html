@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch Example</title>
+    <style>
+        div.body{
+            display: inline;
+            align-items: center;
+            justify-content: center;
+        }
+.out{
+    position: absolute;
+    height: 40px;
+    width :100px;
+    background-color: red;
+    /* border-radius: 20px; */
+}
+.in{
+    position:relative;
+    background-color: black;
+    height: 40px;
+    width :40px;
+    /* border-radius:50%; */
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="body">
+    <div class="out"></div> 
+    <div class="in" id="togg" onclick="tog()"></div>
+    <span>Toggle Switch</span>
+    </div>
+</div>
+    <script>
+var a =1 ;
+function tog() {
+ var po =  document.getElementById("togg")
+ if(a%2==1){
+    po.style.marginLeft = 60+"px"  
+    a=a+1
+ }
+ else{
+    po.style.marginLeft = 0+"px"
+    a=a+1
+ }  
+
+}
+</script>
+</body>
+</html>
+

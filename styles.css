@@ -1,0 +1,450 @@
+body{
+    background-color: rgb(2, 2, 2);
+    color: aliceblue;
+    animation: changeColor 10s infinite;
+    margin: 0;
+}
+
+
+div.img{
+    display: inline-block;
+    border-radius:10px;
+    padding: 10px;
+    margin: 20px;
+}
+div.img:hover{
+    transform: scale(1.5);
+}
+img.headbar{
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 0px 20px rgb(245, 229, 4) ;
+    border-radius: 25px;
+}
+H1.header{
+    display: inline;
+    font-size: 2em;
+    color: #f3f3f3;
+    text-shadow: 0 0 10px #db9034;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    margin: auto;
+    padding: 20px;
+}
+
+ 
+div.cont{
+    display: flex;
+   /* justify-content:space-around; */
+   justify-content: center;
+   padding: 20px;
+   margin-top: 50px;
+       }
+div.container{
+   padding: 10px;
+}
+
+/* div#section{
+    padding: 10px;
+    margin: 40px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    color: black;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    height: 200px;
+    width: 250px;
+    transition: all;
+}  */
+
+/* div.section1:hover {
+    box-shadow: 0px 0px 20px goldenrod;
+    transform: scale(1.1); 
+    transition: ease-in-out; 
+transition-duration:0.2ms;  } */
+
+div.section1{
+    width: 100px;
+    height: 100px;
+    background-image: url('learn.png'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    margin: 40px;
+    /* box-shadow: 0px 0px 10px gold; */
+}
+div.section1:hover{
+transform: scale(1.2);
+box-shadow: 0px 0px 10px rgb(236, 235, 231);
+}
+
+div.section2{
+    width: 100px;
+    height: 100px;
+    background-image: url('quiz.png'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    margin: 40px;
+    /* box-shadow: 0px 0px 10px gold; */
+    /* box-shadow: inset  px 20px rgba(164, 156, 65, 0.989); */
+}
+div.section2:hover{
+transform: scale(1.2);
+box-shadow: 0px 0px 10px rgb(236, 235, 231);
+}
+
+div.section3{
+    width: 100px;
+    height: 100px;
+    background-image: url('game.png'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    margin: 40px;
+    /* box-shadow: 0px 0px 10px gold; */
+}
+div.section3:hover{
+transform: scale(1.2);
+box-shadow: 0px 0px 10px rgb(236, 235, 231);
+}
+
+div.section4{
+    width: 100px;
+    height: 100px;
+    background-image: url('game.png'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    margin: 40px;
+    /* box-shadow: 0px 0px 10px gold; */
+}
+div.section4:hover{
+transform: scale(1.2);
+box-shadow: 0px 0px 10px rgb(236, 235, 231);
+}
+
+    div.footer{
+        display: flex;
+        justify-content:space-around;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    
+    
+    img.footer-img{
+        height: 100px;
+        width: 100px; 
+        border-radius:50%;
+    }
+    
+    
+    
+    footer.copyRight{
+        display: flex;
+        justify-content: center;
+    }
+    
+    p{
+        text-shadow: 0px 0px 20px gold;
+    }
+    
+    img.footer-img:hover{
+    box-shadow: 0px 0px 20px white;
+    border: 1px solid gold;
+    }
+    
+    /* @keyframes changeColor {
+        0% { background-color: #000000; }
+        25% { background-color: #262422; }
+        50% { background-color: #333232; }
+        75% { background-color: #514f4f; }
+        100% { background-color: #6d6d70; }
+    }
+     */
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgb(255,215,0);
+    }
+    100% {
+        text-shadow: 0 0 20px rgb(255,215,0);
+    }
+}
+
+div.contain-all{
+    /* position: absolute; */
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+    background-color: #0e0e0e;
+    box-shadow: 0px 0px 20px Gold;
+}
+button {
+    padding: 10px;
+    font-size: 25px;
+    background-color: Gold;
+    color: #0e0e0e;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px orange;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+    form{
+        margin: 5px;
+    }
+
+    div.question{
+        text-align: center;
+        background-color: rgb(244, 244, 244);
+        box-shadow: 0px 0px 10px Gold;
+        padding: 20px;
+        margin: 5px;
+    }
+    div.question p{
+        display: block;
+    }
+    div.question label{
+        /* position: absolute;
+        left: 20%; */
+        position: relative;
+        left: 1%;
+    }
+    div.question p{
+        font-size: 20px;
+        font-style: oblique;
+    }
+    div.submit-btn{
+        display: flex;
+        justify-content: center;
+    }
+ div.question p{
+color: #000000;
+ }
+    label {
+   color:#000000;
+    }
+
+#welcome-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #141414; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#welcome-image {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px Gold;
+}
+
+.wrapper{
+    display: flex;
+  }
+  .wrapper .static-txt{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 20px;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background: #101111;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+div.sideShowCont{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+  div .sideShow{
+   height: 500px;
+   width: 80%; 
+   background-color: #ddd;
+   position: relative;
+   border-radius: 20px;
+   box-shadow:0px 0px 10px white ;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+div.textShow{
+    height: 300px; 
+    width: 600px;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 600px;
+    border-radius: 20px;
+    justify-content: center;
+    opacity: 0.5;    
+}
+div.textShow:hover{
+    opacity: 1; 
+}
+.img2{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+
+input.inp{
+    display:block;
+    width: 150px;
+    margin: 15px;
+    font-size:20px;
+    border-radius: 10px;
+}
+button.btn{
+    background-color:rgb(255, 255, 255);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    display: block;
+    border-radius: 10px;
+}
+button.btn:hover{
+    transform: scale(1.1);
+    background-color: #ddd;
+    color:blue;
+}
+
+div.logIn{
+    padding: 10px;
+    background-color: #333232;
+    width: fit-content;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #f4f4f4;
+    margin: 15px;
+}
+span.term{
+color: blue;
+display: inline;
+}
+input.check{
+display: inline;
+}
+img.headbar1{
+    height: 50px;
+    width:  50px;
+    box-shadow: 0px 0px 20px rgb(245, 229, 4) ;
+    border-radius: 50%;
+}
+
+#slideshow-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 50px white;
+    border-radius: 20px;
+    overflow-wrap: normal;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.slideshow-btn {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: none;
+    color: #333;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+div.about{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+img.about-pic{
+    border-radius: 20px;
+}
+
+div.pic{
+    height: 400px;
+    width: 400px;
+    box-shadow: 0px 0px 10px gold;
+}
+div.about-text{
+    height: 400px;
+    width: 400px;
+    text-shadow: 0px 0px 10px red;
+    color: white;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+}

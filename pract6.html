@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+function car(){
+
+}
+
+const car = {  
+    name: "MyCar",
+    speed: function () {
+        console.log(`${this.name} is starting.`);
+    },
+
+    speedUp: function() {
+        console.log(`${this.name} is speeding up.`);
+    },  
+
+    stop: function() {
+        console.log(`${this.name} is stopping.`);
+    }
+};
+
+console.log(`Car Name: ${car.name}`);
+car.start();
+car.speedUp();
+car.stop();
+
+</script>
+</html>
